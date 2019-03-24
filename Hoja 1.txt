@@ -1,0 +1,98 @@
+Algoritmo Ejercicio_1
+	//Leer variables de entrada
+	Leer A
+	Leer B
+	Leer C
+	//Restricciones
+	
+	//Asignación de Variables
+	baseRect<-B
+	alturaRect<-C
+	alturaTri<-A-C
+	baseTri<-B
+	
+	//Cálculo de Variables
+	areaTri<-(alturaTri*baseTri)/2
+	areaRect<-(alturaRect*baseRect)
+	areaTotal<-(areaTri+areaRect)
+	Escribir areaTotal
+FinAlgoritmo
+
+Algoritmo Ejercicio_2
+	Escribir "Ancho:"
+	Leer A
+	Escribir "Largo:"
+	Leer L
+	Escribir "Alto"
+	Leer B
+	Volumen<-(A*B*L)
+	Escribir "Total a pagar:"
+	Escribir Volumen
+FinAlgoritmo
+
+Algoritmo Ejercicio_3
+	Escribir "Michaela"
+	Leer M
+	Escribir "Efraín"
+	Leer E1
+	Escribir "Even"
+	Leer E2
+	C<-(M+E1+E2)
+	PORCENTAJE1<-(M/C)*100
+	PORCENTAJE2<-(E1/C)*100
+	PORCENTAJE3<-(E2/C)*100
+	Escribir "Capital"
+	Escribir C
+	Escribir "Porcentaje de Michaela:"
+	Escribir PORCENTAJE1
+	Escribir "Porcentaje de Efraín:"
+	Escribir  PORCENTAJE2
+	Escribir "Porcentaje de Even:"
+	Escribir  PORCENTAJE3
+FinAlgoritmo
+
+Algoritmo Ejercicio_4
+	Escribir "Ganancia Anual"
+	Leer G
+	Escribir "Acciones del primer socio"
+	Leer A
+	Escribir "Acciones del segundo socio"
+	Leer B
+	Escribir "Acciones del tercer socio"
+	Leer C
+    TA<-A+B+C
+	mA<-G*(A/TA)
+	mB<-G*(B/TA)
+	mC<-G*(C/TA)
+	Escribir "Monto del 1° Socio"
+	Escribir mA
+	Escribir "Monto del 2° Socio"
+	Escribir mB
+	Escribir "Monto del 3° Socio"
+	Escribir mC
+FinAlgoritmo
+
+Algoritmo Ejercicio_5
+	Escribir "Precio de compra"
+	Leer PC
+	Escribir "Porcentaje de ganancia"
+	Leer PG
+	PV<-PC+(PC*PG/100)
+	Escribir "Precio de venta"
+	Escribir PV
+FinAlgoritmo
+
+Algoritmo Ejercicio_6
+	Escribir "Precio Venta"
+	Leer PV
+	Escribir "Descuento en porcentaje"
+	Leer D
+	Escribir "Unidades"
+	Leer U
+	PC<-PV-(PV*D/100)
+	OC<-PC*U
+	Escribir "Precio de compra con descuento por unidad"
+	Escribir PC
+	Escribir "Total a pagar"
+	Escribir OC
+FinAlgoritmo

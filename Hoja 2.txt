@@ -1,0 +1,112 @@
+Algoritmo Ejercicio1
+	Leer C
+	m5<-trunc(C/5)
+	m2<-trunc((C MOD 5)/2)
+	m1<-trunc((C MOD 5) MOD 2)
+	Escribir "Monedas de 5"
+	Escribir m5
+	Escribir "Monedas de 2"
+	Escribir m2
+	Escribir "Monedas de 1"
+	Escribir m1
+FinAlgoritmo	
+
+Algoritmo Ejercicio2
+	Leer t
+	h<-trunc(t/3600)
+	m<-trunc((t MOD 3600)/60)
+	s<-trunc((t MOD 3600) MOD 60)
+	Escribir "Horas"
+	Escribir h
+	Escribir "Minutos"
+	Escribir m
+	Escribir "Segundos"
+	Escribir s
+FinAlgoritmo
+
+Algoritmo Ejercicio_3
+	Escribir "Horas"
+	Leer h
+	Escribir "Minutos"
+	Leer m
+	Escribir "Segundos"
+	Leer s
+	t<-(h*3600)+(m*60)+s
+	t1<-t+1
+	h1<-trunc(t1/3600)
+	m1<-trunc((t1 MOD 3600)/60)
+	s1<-trunc((t1 MOD 3600) MOD 60)
+	Escribir "Tiempo + 1 segundo"
+	Escribir "Hora"
+	Escribir h1
+	Escribir "Minutos"
+	Escribir m1
+	Escribir "Segundos"
+	Escribir s1
+	
+FinAlgoritmo
+
+Algoritmo Ejercicio_4
+	Escribir "Escribir ángulo en radianes sin pi"
+	Leer R
+	X<-R*180
+	ST<-X*3600
+	G<-trunc(ST/3600)
+	M<-trunc((ST MOD 3600)/60)
+	S<-trunc((ST MOD 3600) MOD 60)
+	Escribir "Grados"
+	Escribir G
+	Escribir "Minutos"
+	Escribir M
+	Escribir "Segundos"
+	Escribir S
+FinAlgoritmo
+
+Algoritmo Ejercicio_5
+	Escribir "Valor x"
+	Leer x1
+	Escribir "Valor y"
+	Leer x2
+	y1<-x1*x1
+	y2<-x2*x2
+	Si y1+y2=25 Entonces
+		Escribir "Sí se encuentra en el círculo"
+	SiNo
+		Escribir "No se encuentra en el círculo"
+	Fin Si
+	
+FinAlgoritmo
+
+Algoritmo Ejercicio_8
+	Escribir "Escribir Valor 1"
+	Leer a
+	Escribir "Escribir Valor 2"
+	Leer b
+	Escribir "Escribir Valor 3"
+	Leer c
+	Si a>b y a>c y b>c Entonces
+		Escribir "V1>V2>V3"
+	SiNo
+		Si b>a y b>c y a>c Entonces
+			Escribir "V2>V1>V3"
+		SiNo
+			Si c>a y b>a y c>b Entonces
+				Escribir "V3>V2>V1"
+			SiNo
+				Si a>b y c>b y a>c Entonces
+					Escribir "V1>V3>V2"
+				SiNo
+					Si b>c y c>a y b>a Entonces
+						Escribir "V2>V3>V1"
+					SiNo
+						Si c>a y a>b y c>b Entonces
+							Escribir "V3>V1>V2"
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+	
+FinAlgoritmo
+	
