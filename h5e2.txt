@@ -1,0 +1,58 @@
+// ConsoleApplication5.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int edad;
+	char sexo;
+	cout << "Insertar sexo\n";
+	cin >> sexo;
+	if (sexo != 'M', sexo != 'F')
+	{
+		cout << "Valor no valido\n";
+	}
+	else
+	{
+		if (sexo >> 'M')
+		{
+			cout << "Insertar edad\n";
+			cin >> edad;
+			if (edad < 25)
+			{
+				cout << "Total a pagar:\n " << "S/" << 1000 << endl;
+			}
+			else
+			{
+				if (edad >= 25)
+				{
+					cout << "Total a pagar:\n " << "S/" << 700 << endl;
+				}
+			}
+		}
+		else
+		{
+			if (sexo >> 'F')
+			{
+				cout << "Insertar edad\n";
+				cin >> edad;
+				if (edad < 21)
+				{
+					cout << "Total a pagar:\n " << "S/" << 800 << endl;
+				}
+				else
+				{
+					if (sexo >= 21)
+					{
+						cout << "Total a pagar:\n " << "S/" << 500 << endl;
+					}
+				}
+			}
+		}
+	}
+	system("pause");
+	return 0;
+}

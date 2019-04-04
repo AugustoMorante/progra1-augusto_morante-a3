@@ -1,0 +1,40 @@
+// ConsoleApplication4.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n, d;
+	cout << "Numero de neumaticos\n";
+	cin >> n;
+	if (n < 3)
+	{
+		d = n * 145;
+		cout << "Dinero a pagar\n";
+		cout << "S/" << d << endl;
+	}
+	else
+	{
+		if (n >= 3, n <= 5)
+		{
+			d = n * 138;
+			cout << "Dinero a pagar\n";
+			cout << "S/" << d << endl;
+		}
+		else
+		{
+			if (n > 5)
+			{
+				d = n * 135;
+				cout << "Dinero a pagar\n";
+				cout << "S/" << d << endl;
+			}
+		}
+	}
+	system("pause");
+    return 0;
+}
+
